@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="متجر روبلكس - أفضل منتجات روبلكس بأفضل الأسعار">
+  <meta name="theme-color" content="#ed1c24">
+  <meta property="og:title" content="متجر روبلكس">
+  <meta property="og:description" content="أفضل منتجات روبلكس بأفضل الأسعار">
+  <meta property="og:type" content="website">
+  <title id="page-title">متجر روبلكس</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="roblox-loader">
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+      </div>
+      <p>جاري تحميل المتجر...</p>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <h1 id="store-name">متجر روبلكس</h1>
+        </div>
+        <nav class="nav-menu">
+          <a href="#products" class="nav-link"><i class="fas fa-store"></i> المنتجات</a>
+          <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> عن المتجر</a>
+          <a href="#contact" class="nav-link"><i class="fas fa-headset"></i> استفسارات</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">المتجر الرسمي</div>
+        <h1 id="hero-title">مرحباً بكم في متجر روبلكس</h1>
+        <p id="hero-text">أفضل منتجات روبلكس الأصلية بأفضل الأسعار. تسوق الآن واستمتع بتجربة فريدة!</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-number" id="total-products">0</span>
+            <span class="stat-label">منتج</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number" id="total-orders">0</span>
+            <span class="stat-label">طلب</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">دعم</span>
+          </div>
+        </div>
+        <a href="#products" class="hero-btn">
+          <span>تصفح المنتجات</span>
+          <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#0a0a0f" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">تسوق الآن</div>
+        <h2>منتجاتنا <span class="highlight">المميزة</span></h2>
+        <p>اختر المنتج الذي يناسبك واحصل عليه فوراً</p>
+      </div>
+      <div class="products-grid" id="products-grid">
+        <div class="product-skeleton" id="skeleton-loader">
+          <div class="skeleton-card" style="--i:0">
+            <div class="skeleton-img"></div>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-text short"></div>
+            <div class="skeleton-text"></div>
+          </div>
+          <div class="skeleton-card" style="--i:1">
+            <div class="skeleton-img"></div>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-text short"></div>
+            <div class="skeleton-text"></div>
+          </div>
+          <div class="skeleton-card" style="--i:2">
+            <div class="skeleton-img"></div>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-text short"></div>
+            <div class="skeleton-text"></div>
+          </div>
+          <div class="skeleton-card" style="--i:3">
+            <div class="skeleton-img"></div>
+            <div class="skeleton-text"></div>
+            <div class="skeleton-text short"></div>
+            <div class="skeleton-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+          <h3>توصيل فوري</h3>
+          <p>استلام المنتج فور تأكيد الطلب</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>دفع آمن</h3>
+          <p>طرق دفع موثوقة ومضمونة</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <h3>دعم 24/7</h3>
+          <p>فريق دعم جاهز لمساعدتك</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-star"></i></div>
+          <h3>منتجات أصلية</h3>
+          <p>ضمان الجودة والمصداقية</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <div class="about-image-box">
+            <i class="fas fa-cube"></i>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-subtitle">من نحن</div>
+          <h2>عن <span class="highlight">المتجر</span></h2>
+          <p id="about-text">متجر متخصص في بيع منتجات روبلكس بأفضل الأسعار وأسرع توصيل.</p>
+          <div class="about-features">
+            <div class="about-feature"><i class="fas fa-check-circle"></i> منتجات حصرية</div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i> أسعار منافسة</div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i> توصيل فوري</div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i> دعم متواصل</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">تواصل معنا</div>
+        <h2>استفسارات <span class="highlight">واتساب</span></h2>
+        <p>للاستفسار عن أي منتج أو طلب مخصص، تواصل معنا مباشرة</p>
+      </div>
+      <div class="contact-card-wrapper">
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>تواصل مع خدمة العملاء</h3>
+          <p>نحن هنا للإجابة على جميع استفساراتك، فقط اضغط على الزر أدناه</p>
+          <a href="https://wa.me/966576053726?text=مرحباً، لدي استفسار عن منتجات روبلكس" target="_blank" class="whatsapp-btn contact-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>راسلنا على واتساب</span>
+          </a>
+          <div class="contact-info">
+            <div class="contact-item"><i class="fas fa-clock"></i> أوقات العمل: 24 ساعة</div>
+            <div class="contact-item"><i class="fas fa-reply"></i> الرد خلال دقائق</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-cube"></i>
+            <span id="footer-store-name">متجر روبلكس</span>
+          </div>
+          <p>أفضل متجر لشراء منتجات روبلكس بأفضل الأسعار</p>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <a href="#products">المنتجات</a>
+          <a href="#about">عن المتجر</a>
+          <a href="#contact">استفسارات</a>
+        </div>
+        <div class="footer-social">
+          <h4>تابعنا</h4>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/966576053726" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة &copy; <span id="year"></span> متجر روبلكس</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="product-modal" id="product-modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <div class="modal-body">
+        <div class="modal-image" id="modal-image">
+          <img src="" alt="" id="modal-img">
+        </div>
+        <div class="modal-info">
+          <div class="modal-badge" id="modal-badge">متوفر</div>
+          <h2 id="modal-name">اسم المنتج</h2>
+          <div class="modal-price" id="modal-price">0 ريال</div>
+          <p class="modal-desc" id="modal-desc">وصف المنتج</p>
+          <div class="modal-orders">
+            <i class="fas fa-shopping-cart"></i>
+            <span>عدد الطلبات: <strong id="modal-orders-count">0</strong></span>
+          </div>
+          <button class="buy-btn" id="modal-buy-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span>شراء الآن</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/966576053726" target="_blank" class="whatsapp-float" id="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="scroll-top" id="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="/public/js/main.js"></script>
+</body>
+</html>
